@@ -117,4 +117,4 @@ class Tetris:
             self.root.after(self.delay, self.update)
 
 if __name__ == "__main__":
-    Tetris
+    Tetris()
