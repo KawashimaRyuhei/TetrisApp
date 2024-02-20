@@ -46,6 +46,10 @@ class Tetris:
         with open("high_score.txt", "w") as f:
             f.write(str(self.high_score))
 
+    """ウィンドウのタイトル、スコア、ハイスコアを更新する"""
+    def update_title(self):
+        self.root.title(f"Tetris - Score: {self.score} High Score: {self.high_score}")
+
     def draw_board(self):
         self.canvas.delete("shape")
         for y in range(20):
