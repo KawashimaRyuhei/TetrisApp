@@ -30,6 +30,16 @@ class Tetris:
         self.root.bind("<space>", lambda e: self.rotate_shape())
         self.root.after(self.delay, self.update)
         self.root.mainloop()
+        self.high_score = self.load_high_score()
+        self.update_title()
+
+    """ハイスコアをファイルから読み込む"""
+    def load_high_score(self):
+        try:
+            with open("high_score.txt", "r") as f:
+                return int(f.load())
+        except FileNotFoundError:
+            return 0
 
     def draw_board(self):
         self.canvas.delete("shape")
