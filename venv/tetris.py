@@ -50,6 +50,13 @@ class Tetris:
     def update_title(self):
         self.root.title(f"Tetris - Score: {self.score} High Score: {self.high_score}")
 
+    """ハイスコアを確認し、必要に応じて更新する"""
+    def check_high_score(self):
+        if self.score > self.high_score:
+            self.high_score = self.score
+            self.save_high_score()
+            self.update_title()
+
     def draw_board(self):
         self.canvas.delete("shape")
         for y in range(20):
