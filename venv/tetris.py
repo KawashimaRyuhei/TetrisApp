@@ -41,6 +41,11 @@ class Tetris:
         except FileNotFoundError:
             return 0
 
+    """ハイスコアをファイルに保存する"""
+    def save_high_score(self):
+        with open("high_score.txt", "w") as f:
+            f.write(str(self.high_score))
+
     def draw_board(self):
         self.canvas.delete("shape")
         for y in range(20):
