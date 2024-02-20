@@ -4,6 +4,8 @@ import time
 
 class Tetris:
     def __init__(self):
+        self.score = 0
+        self.high_score = self.load_high_score()
         self.root = tk.Tk()
         self.root.title("Tetris")
         self.canvas = tk.Canvas(self.root, width=300, height=600, bg="black")
@@ -37,7 +39,7 @@ class Tetris:
     def load_high_score(self):
         try:
             with open("high_score.txt", "r") as f:
-                return int(f.load())
+                return int(f.read())
         except FileNotFoundError:
             return 0
 
