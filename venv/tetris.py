@@ -133,6 +133,7 @@ class Tetris:
         self.current_y = 0
         if self.collides(0, 0):
             self.game_over = True
+            self.check_high_score()
             self.canvas.create_text(
                 150, 300, text="Game Over", font=("Helvetica", 36), fill="white")
 
