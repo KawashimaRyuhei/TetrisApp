@@ -125,6 +125,7 @@ class Tetris:
             self.board.insert(0, [0] * 10)
             self.score += 1
         self.root.title("Tetris - Score: {}".format(self.score))
+        self.check_high_score()
 
     def new_shape(self):
         self.current_shape = random.choice(self.shapes)
