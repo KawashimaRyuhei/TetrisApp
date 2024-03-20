@@ -10,16 +10,16 @@
 
 ## 画面レイアウト
 
-ゲームスタート
+①ゲームスタート
 ![Aries](images/TetrisAppScreen.png)
 
-横一列にテトリミノが揃うと
+②横一列にテトリミノが揃うと↓
 ![Aries](images/TetrisAppEraseline1.png)
 
-その行は消える
+③その行は消えます
 ![Aries](images/TetrisAppEraseline2.png)
 
-画面最上部までテトリミノが到達するとGAMEOVER
+④画面最上部までテトリミノが到達するとGAMEOVER
 ![Aries](images/TetrisAppGameOver.png)
 
 ## システム動作
@@ -38,21 +38,21 @@ Block: ブロックの形状と位置を管理します。
 
 ### メソッド構成
 
-__init__: ゲームの初期化を行います。ゲームの状態を初期化し、最初のブロックを生成します。
-load_high_score: ハイスコアをファイルから読み込みます。
+__init__: ゲームの初期化を行います。ゲームの状態を初期化し、最初のブロックを生成します。  
+load_high_score: ハイスコアをファイルから読み込みます。  
 save_high_score: ハイスコアをファイルに保存します。
-update_title: ウィンドウのタイトル、スコア、ハイスコアを更新します。
-check_high_score: ハイスコアを確認し、必要に応じて更新します。
-draw_board: ボード上のブロックを描画します。
-draw_shape: 現在のブロックを描画します。
-move_shape: ブロックを移動します。
-move_down: ブロックを下に移動します。
-rotate_shape: ブロックを回転します。
-collides: ブロックが他のブロックやボードの境界と衝突していないかをチェックします。
-freeze_shape: ブロックを固定します。
-clear_lines: 消えるべき行を見つけ、それらの行を消します。
-new_shape: 新しいブロックを生成します。
-update: ゲームの状態を更新します。
+update_title: ウィンドウのタイトル、スコア、ハイスコアを更新します。  
+check_high_score: ハイスコアを確認し、必要に応じて更新します。  
+draw_board: ボード上のブロックを描画します。  
+draw_shape: 現在のブロックを描画します。  
+move_shape: ブロックを移動します。  
+move_down: ブロックを下に移動します。  
+rotate_shape: ブロックを回転します。  
+collides: ブロックが他のブロックやボードの境界と衝突していないかをチェックします。  
+freeze_shape: ブロックを固定します。  
+clear_lines: 消えるべき行を見つけ、それらの行を消します。  
+new_shape: 新しいブロックを生成します。  
+update: ゲームの状態を更新します。  
 
 ## ファイル構成
 
