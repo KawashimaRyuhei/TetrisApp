@@ -10,9 +10,17 @@
 
 ## 画面レイアウト
 
+ゲームスタート
 ![Aries](images/TetrisAppScreen.png)
-![Aries](images/TetrisAppScreen.png)
-![Aries](images/TetrisAppScreen.png)
+
+横一列にテトリミノが揃うと
+![Aries](images/TetrisAppEraseline1.png)
+
+その行は消える
+![Aries](images/TetrisAppEraseline2.png)
+
+画面最上部までテトリミノが到達するとGAMEOVER
+![Aries](images/TetrisAppGameOver.png)
 
 ## システム動作
 
